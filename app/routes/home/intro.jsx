@@ -60,6 +60,7 @@ export function Intro({ id, sectionRef, scrollIndicatorHidden, ...rest }) {
       tabIndex={-1}
       {...rest}
     >
+      
       <Transition in key={theme} timeout={3000}>
         {({ visible, status }) => (
           <>
@@ -69,9 +70,11 @@ export function Intro({ id, sectionRef, scrollIndicatorHidden, ...rest }) {
               </Suspense>
             )}
             <header className={styles.text}>
+
               <h1 className={styles.name} data-visible={visible} id={titleId}>
                 <DecoderText text={config.name} delay={500} />
               </h1>
+
               <Heading level={0} as="h2" className={styles.title}>
                 <VisuallyHidden className={styles.label}>
                   {`${config.role} + ${introLabel}`}
@@ -120,6 +123,7 @@ export function Intro({ id, sectionRef, scrollIndicatorHidden, ...rest }) {
             >
               <VisuallyHidden>Scroll to projects</VisuallyHidden>
             </RouterLink>
+            
             <RouterLink
               to="/#project-1"
               className={styles.mobileScrollIndicator}
