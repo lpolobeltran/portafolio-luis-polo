@@ -18,14 +18,12 @@ import styles from './profile.module.css';
 const ProfileText = ({ visible, titleId }) => (
   <Fragment>
     <Heading className={styles.title} data-visible={visible} level={3} id={titleId}>
-      <DecoderText text="Hi there" start={visible} delay={500} />
+      <DecoderText text="¡Me fascina la creatividad!" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I’m Hamish, currently I live in Sydney working as a senior product designer at{' '}
-      <Link href="https://www.qwilr.com">Qwilr</Link>. My projects include UX design, UI
-      animations, and icon illustration. Being comfortable with code allows me to rapidly
-      prototype and validate experiences. If you’re interested in the tools and software I
-      use check out my <Link href="/uses">uses page</Link>.
+      Hola, un gusto cononocerte. mi nombre es Luis Polo y soy <Link href="#">desarrollador full stack</Link>, apasionado por crear experiencias
+      digitales que ayuden a las personas a disfrutar de la vida. Mis proyectos incluyen diseño UX/UI,
+      animaciones, minimalismo y creatividad desbordante.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
       In my spare time I like to practice Brazilian Jiu Jitsu, play video games, and{' '}

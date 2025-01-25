@@ -103,8 +103,8 @@ export const Home = () => {
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        title="Diseño de dashboard para proyecto de energía renovable"
-        description="Designing a platform to help educators build better online courseware"
+        title="Dashboard proyecto de energía solar"
+        description="Desarrollo de una plataforma para el monitoreo en tiempo de real de un proyecto solar"
         buttonText="Ver proyecto"
         buttonLink="/projects/smart-sparrow"
         model={{
@@ -124,8 +124,8 @@ export const Home = () => {
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
-        title="Video game progress tracking"
-        description="Design and development for a video game tracking app built in React Native"
+        title="Tienda de productos electrónicos"
+        description="Desarollo de una plataforma e-comers para compras usando Java + Spring + SQL"
         buttonText="Ver proyecto"
         buttonLink="https://gamestack.hamishw.com"
         model={{
@@ -149,8 +149,8 @@ export const Home = () => {
         sectionRef={projectThree}
         visible={visibleSections.includes(projectThree.current)}
         index={3}
-        title="Biomedical image collaboration"
-        description="Increasing the amount of collaboration in Slice, an app for biomedical imaging"
+        title="Pagina web repostería Borboleta Cake"
+        description="Diseño de Landing Page para exhibir productos de negocio de repostería"
         buttonText="Ver proyecto"
         buttonLink="/projects/slice"
         model={{
