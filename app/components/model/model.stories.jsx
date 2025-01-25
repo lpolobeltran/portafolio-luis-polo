@@ -26,7 +26,7 @@ export const Phone = () => (
       models={[
         {
           ...deviceModels.phone,
-          position: { x: -0.6, y: 0.8, z: 0.1 },
+          position: { x: 0, y: 0, z: 0 },
           texture: {
             srcSet: `${phoneTexture} 375w, ${phoneTextureLarge} 750w`,
             placeholder: phoneTexturePlaceholder,
@@ -34,7 +34,7 @@ export const Phone = () => (
         },
         {
           ...deviceModels.phone,
-          position: { x: 0.6, y: -0.8, z: 0.4 },
+          position: { x: 0, y: 0, z: 0 },
           texture: {
             srcSet: `${phoneTexture2} 375w, ${phoneTexture2Large} 750w`,
             placeholder: phoneTexture2Placeholder,

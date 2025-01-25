@@ -105,7 +105,7 @@ export const Home = () => {
         index={1}
         title="Diseño de dashboard para proyecto de energía renovable"
         description="Designing a platform to help educators build better online courseware"
-        buttonText="View project"
+        buttonText="Ver proyecto"
         buttonLink="/projects/smart-sparrow"
         model={{
           type: 'laptop',
@@ -126,10 +126,11 @@ export const Home = () => {
         index={2}
         title="Video game progress tracking"
         description="Design and development for a video game tracking app built in React Native"
-        buttonText="View website"
+        buttonText="Ver proyecto"
         buttonLink="https://gamestack.hamishw.com"
         model={{
-          type: 'phone',
+          style: { right: '14%'},
+          type: 'laptop',
           alt: 'App login screen',
           textures: [
             {
@@ -150,7 +151,7 @@ export const Home = () => {
         index={3}
         title="Biomedical image collaboration"
         description="Increasing the amount of collaboration in Slice, an app for biomedical imaging"
-        buttonText="View project"
+        buttonText="Ver proyecto"
         buttonLink="/projects/slice"
         model={{
           type: 'laptop',

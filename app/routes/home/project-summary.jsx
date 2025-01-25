@@ -67,12 +67,12 @@ export function ProjectSummary({
     return (
       <div className={styles.details}>
         <div aria-hidden className={styles.index}>
-          <Divider
+          {/* <Divider
             notchWidth="64px"
             notchHeight="8px"
             collapsed={!visible}
             collapseDelay={1000}
-          />
+          /> */}
           <span className={styles.indexNumber} data-visible={visible}>
             {indexText}
           </span>
@@ -103,7 +103,6 @@ export function ProjectSummary({
       <div className={styles.preview}>
         {model.type === 'laptop' && (
           <>
-            {renderKatakana('laptop', visible)}
             <div className={styles.model} data-device="laptop">
               {!modelLoaded && (
                 <Loader center className={styles.loader} data-visible={visible} />

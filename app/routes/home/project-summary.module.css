@@ -85,6 +85,10 @@
   width: 100%;
 }
 
+.model #project-2  {
+  right: 14%;
+}
+
 .model {
   --width: 180%;
   --aspectRatio: 12 / 10;
@@ -96,7 +100,7 @@
 
   &[data-device='laptop'] {
     top: 6%;
-    left: 14%;
+    /* left: 14%; */
 
     @media (--mediaDesktop) {
       --width: 180%;
@@ -115,7 +119,7 @@
     --aspectRatio: 7 / 10;
 
     top: 5%;
-    left: -10%;
+    right: 14%;
 
     @media (--mediaDesktop) {
       --width: 108%;
