@@ -55,6 +55,7 @@ export const Home = () => {
   const projectTwo = useRef();
   const projectThree = useRef();
   const details = useRef();
+  const details2 = useRef();
 
   useEffect(() => {
     const sections = [intro, projectOne, projectTwo, projectThree, details];
@@ -177,9 +178,9 @@ export const Home = () => {
 
       {/* Habilidades */}
       <Skills
-        sectionRef={details}
-        visible={visibleSections.includes(details.current)}
-        id="details"
+        sectionRef={details2}
+        visible={visibleSections.includes(details2.current)}
+        id="details2"
       />
 
       <Footer />
