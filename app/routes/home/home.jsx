@@ -18,6 +18,7 @@ import { ProjectSummary } from './project-summary';
 import { useEffect, useRef, useState } from 'react';
 import config from '~/config.json';
 import styles from './home.module.css';
+import { Skills } from './skills';
 
 // Prefetch draco decoader wasm
 export const links = () => {
@@ -93,11 +94,14 @@ export const Home = () => {
 
   return (
     <div className={styles.home}>
+      {/* Intro */}
       <Intro
         id="intro"
         sectionRef={intro}
         scrollIndicatorHidden={scrollIndicatorHidden}
       />
+
+      {/* Proyectos */}
       <ProjectSummary
         id="project-1"
         sectionRef={projectOne}
@@ -164,11 +168,20 @@ export const Home = () => {
           ],
         }}
       />
+      {/* Perfil */}
       <Profile
         sectionRef={details}
         visible={visibleSections.includes(details.current)}
         id="details"
       />
+
+      {/* Habilidades */}
+      <Skills
+        sectionRef={details}
+        visible={visibleSections.includes(details.current)}
+        id="details"
+      />
+
       <Footer />
     </div>
   );

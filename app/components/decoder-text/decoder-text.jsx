@@ -7,7 +7,7 @@ import styles from './decoder-text.module.css';
 
 // prettier-ignore
 const glyphs = [
-  'ア', 'イ', 'ウ', 'エ', 'オ',
+  '0', 'イ', 'ウ', 'エ', 'オ',
   'カ', 'キ', 'ク', 'ケ', 'コ',
   'サ', 'シ', 'ス', 'セ', 'ソ',
   'タ', 'チ', 'ツ', 'テ', 'ト',

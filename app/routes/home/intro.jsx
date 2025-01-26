@@ -64,17 +64,21 @@ export function Intro({ id, sectionRef, scrollIndicatorHidden, ...rest }) {
       <Transition in key={theme} timeout={3000}>
         {({ visible, status }) => (
           <>
+            {/* Animacion explosion */}
             {isHydrated && (
               <Suspense>
                 <DisplacementSphere />
               </Suspense>
             )}
+            
             <header className={styles.text}>
 
+              {/* Nombre */}
               <h1 className={styles.name} data-visible={visible} id={titleId}>
-                <DecoderText text={config.name} delay={500} />
+                {config.name}
               </h1>
 
+              {/* Rol */}
               <Heading level={0} as="h2" className={styles.title}>
                 <VisuallyHidden className={styles.label}>
                   {`${config.role} + ${introLabel}`}
@@ -94,7 +98,7 @@ export function Intro({ id, sectionRef, scrollIndicatorHidden, ...rest }) {
                     <Transition
                       unmount
                       in={item === currentDiscipline}
-                      timeout={{ enter: 3000, exit: 2000 }}
+                      timeout={{ enter: 3000, exit: 1000 }}
                       key={item}
                     >
                       {({ status, nodeRef }) => (
@@ -114,6 +118,8 @@ export function Intro({ id, sectionRef, scrollIndicatorHidden, ...rest }) {
                 </div>
               </Heading>
             </header>
+
+
             <RouterLink
               to="/#project-1"
               className={styles.scrollIndicator}
